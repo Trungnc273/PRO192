@@ -27,6 +27,7 @@ public class main
         System.out.println("Số Leader: "+Leader.countLeader);
         System.out.println("===============================");
         displayFresherWithID(staffs);
+        writeStaffsToCSV(staffs);
     }
     
     public static void inputStaffs(ArrayList<Staff> staffs) 
@@ -69,7 +70,7 @@ public class main
             int k=0;
             System.out.print("Nhập employeeID(6 kí tự số): ");
             employeeID = scanner.nextLine();
-            if(employeeID.length()>6||employeeID.length()<0)
+            if(employeeID.length()!=6)
             {
                 System.out.println("Nhập lại!");
                 continue;
@@ -95,7 +96,7 @@ public class main
             int k=0;
             System.out.print("Nhập cardID(12 kí tự số): ");
             cardID = scanner.nextLine();
-            if(cardID.length()>12||cardID.length()<0)
+            if(cardID.length()!=12)
             {
                 System.out.println("Nhập lại!");
                 continue;
@@ -177,7 +178,7 @@ public class main
             int k=0;
             System.out.print("Nhập employeeID(6 kí tự số): ");
             employeeID = scanner.nextLine();
-            if(employeeID.length()>6||employeeID.length()<0)
+            if(employeeID.length()!=6)
             {
                 System.out.println("Nhập lại!");
                 continue;
@@ -203,7 +204,7 @@ public class main
             int k=0;
             System.out.print("Nhập cardID(12 kí tự số): ");
             cardID = scanner.nextLine();
-            if(cardID.length()>12||cardID.length()<0)
+            if(cardID.length()!=12)
             {
                 System.out.println("Nhập lại!");
                 continue;
@@ -307,7 +308,7 @@ public class main
             int k=0;
             System.out.print("Nhập employeeID(6 kí tự số): ");
             employeeID = scanner.nextLine();
-            if(employeeID.length()>6||employeeID.length()<0)
+            if(employeeID.length()!=6)
             {
                 System.out.println("Nhập lại!");
                 continue;
@@ -333,7 +334,7 @@ public class main
             int k=0;
             System.out.print("Nhập cardID(12 kí tự số): ");
             cardID = scanner.nextLine();
-            if(cardID.length()>12||cardID.length()<0)
+            if(cardID.length()!=12)
             {
                 System.out.println("Nhập lại!");
                 continue;
@@ -493,7 +494,7 @@ public class main
             int k=0;
             System.out.print("Nhập szID(6 kí tự số): ");
             szID = scanner.nextLine();
-            if(szID.length()>6||szID.length()<0)
+            if(szID.length()!=6)
             {
                 System.out.println("Nhập lại!");
                 continue;
